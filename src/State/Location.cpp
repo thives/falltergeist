@@ -589,10 +589,7 @@ void Location::render()
     for (auto &object: _objects)
     {
         object->render();
-        if (object->hexagon())
-        {
-            object->hexagon()->setInRender(object->inRender());
-        }
+        object->hexagon()->setInRender(object->inRender());
     }
 /*
     for (auto hexagon : _hexagonGrid->hexagons())
@@ -1146,35 +1143,13 @@ void Location::moveObjectToHexagon(Game::Object *object, Hexagon *hexagon, bool 
         _objects.sort(
                 [](std::unique_ptr<Game::Object> &obj1, std::unique_ptr<Game::Object> &obj2) -> bool
                 {
-                    if (!obj1->hexagon()) 
-                    {
-                        return true;
-                    }
-                    else if (!obj2->hexagon())
-                    {
-                        return false;
-                    }
-                    else
-                    {
-                        return obj1->hexagon()->number() < obj2->hexagon()->number();
-                    }
+                    return obj1->hexagon()->number() < obj2->hexagon()->number();
                 }
         );
         _flatObjects.sort(
                 [](std::unique_ptr<Game::Object> &obj1, std::unique_ptr<Game::Object> &obj2) -> bool
                 {
-                    if (!obj1->hexagon()) 
-                    {
-                        return true;
-                    }
-                    else if (!obj2->hexagon())
-                    {
-                        return false;
-                    }
-                    else
-                    {
-                        return obj1->hexagon()->number() < obj2->hexagon()->number();
-                    }
+                    return obj1->hexagon()->number() < obj2->hexagon()->number();
                 }
         );
         if(hexagon)
