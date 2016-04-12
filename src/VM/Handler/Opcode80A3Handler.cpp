@@ -50,4 +50,8 @@ namespace Falltergeist
     }
 }
 
+<<<<<<< efa3694374369beef3e78ed454f382dcc9169b5f:src/VM/Handler/Opcode80A3Handler.cpp
 
+=======
+}
+>>>>>>> Changed build system from cmake to waf, and cleaned up things I do not need.:src/VM/Handlers/Opcode8107Handler.cpp

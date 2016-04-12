@@ -1,0 +1,15 @@
+# src/Game/wscript
+def options(opt):
+    opt.load('compiler_cxx')
+    
+def configure(cfg):
+    cfg.load('compiler_cxx')
+
+def build(bld):
+    deps = bld.env.SYSTEM_DEPS + ['VFS']
+    type = bld.env.BUILD_TYPE
+    bld(features = 'cxx cxxshlib', 
+        source   = bld.path.ant_glob('**/*.cpp'), 
+        target   = bld.path.name, 
+        use      = type + deps
+    )

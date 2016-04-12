@@ -22,10 +22,10 @@
 
 // C++ standard includes
 #include <memory>
-#include <Graphics/Sprite.h>
 
 // Falltergeist includes
 #include "../UI/Base.h"
+#include "../Graphics/Sprite.h"
 
 // Third party includes
 
