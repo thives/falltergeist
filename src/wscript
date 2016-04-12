@@ -12,5 +12,5 @@ def build(bld):
         source   = bld.path.ant_glob('*.cpp'), 
         target   = 'falltergeist', 
         use      = type + deps,
-        linkflags = ['-Wl,-rpath,$ORIGIN', '-Wl,-z,origin']
+        linkflags = ['-Wl,-rpath,$ORIGIN/../lib', '-Wl,-z,origin']
     )
