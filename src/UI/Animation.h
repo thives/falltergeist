@@ -23,10 +23,10 @@
 // C++ standard includes
 #include <vector>
 #include <string>
-#include <Graphics/Animation.h>
 
 // Falltergeist includes
 #include "../UI/Base.h"
+#include "../Graphics/Animation.h"
 
 // Third party includes
 

@@ -58,8 +58,8 @@
 
 // Third party includes
 #include <SDL_image.h>
-#include <Graphics/Font/AAF.h>
-#include <Graphics/Font/FON.h>
+#include "Graphics/Font/AAF.h"
+#include "Graphics/Font/FON.h"
 
 namespace Falltergeist
 {

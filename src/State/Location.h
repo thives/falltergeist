@@ -30,7 +30,7 @@
 #include "../UI/ImageButton.h"
 #include "../Game/Object.h"
 #include "../Game/Timer.h"
-#include <Graphics/Lightmap.h>
+#include "../Graphics/Lightmap.h"
 
 
 // Third party includes

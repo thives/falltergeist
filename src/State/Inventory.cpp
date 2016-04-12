@@ -19,7 +19,6 @@
 
 // C++ standard includes
 #include <sstream>
-#include <UI/Rectangle.h>
 
 // Falltergeist includes
 #include "../Event/Event.h"
@@ -45,6 +44,7 @@
 #include "../UI/ImageButton.h"
 #include "../UI/InventoryItem.h"
 #include "../UI/PlayerPanel.h"
+#include "../UI/Rectangle.h"
 #include "../UI/ItemsList.h"
 #include "../UI/TextArea.h"
 #include "../UI/ImageList.h"

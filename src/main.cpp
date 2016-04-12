@@ -21,11 +21,11 @@
 #include <memory>
 
 // Falltergeist includes
-#include "src/Exception.h"
-#include "src/Game/Game.h"
-#include "src/Logger.h"
-#include "src/Settings.h"
-#include "src/State/Start.h"
+#include "Exception.h"
+#include "Game/Game.h"
+#include "Logger.h"
+#include "Settings.h"
+#include "State/Start.h"
 
 // Third party includes
 
